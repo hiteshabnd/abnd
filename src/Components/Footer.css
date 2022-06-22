@@ -1,0 +1,40 @@
+.footer {
+  background: black;
+  color: white;
+  padding: 4rem 0;
+}
+
+.footer a {
+  color: white;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 3fr 2fr 4fr;
+  grid-gap: 50px;
+}
+
+.footerGridItem3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.footerGridItem3 img {
+  width: 260px;
+  transition: 0.3s;
+}
+
+.footerGridItem3 img:hover {
+  transform: scale(1.2);
+}
+
+.footerGridItem1 img {
+  padding-right: 6px;
+}
+
+@media only screen and (max-width: 767px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+  }
+}
