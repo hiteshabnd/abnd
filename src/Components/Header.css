@@ -3,6 +3,7 @@
   position: sticky;
   background-color: white;
   top: 0;
+  height: 80px;
 }
 
 .header .container {
@@ -24,17 +25,41 @@
   color: black;
 }
 
+.menu-icon {
+  position: absolute;
+  right: 40px;
+  top: 27px;
+  display: none;
+}
+
+.menu-icon svg {
+  font-size: 30px;
+  transition: 0.3s;
+  position: absolute;
+  background-color: white;
+}
+
 @media only screen and (max-width: 767px) {
+  .menu-icon {
+    display: block;
+  }
   .nav {
     flex-direction: column;
+    gap: 20px;
     position: absolute;
-    background: #fafafa;
-    width: 50%;
-    height: 100vh;
-    padding: 20px;
-    margin-top: 80px;
     top: 0;
     right: 0;
+    background: #dddddd;
+    height: 100vh;
+    width: 50%;
+    padding: 20px;
+    margin-top: 80px;
     transition: 0.3s;
+    overflow: hidden;
+    transform: translatex(0%);
+  }
+  .nav a {
+    border-bottom: 1px solid rgb(206, 206, 206);
+    padding-bottom: 20px;
   }
 }
