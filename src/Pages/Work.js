@@ -1,10 +1,13 @@
 import React from "react";
+import PageAnimation from "../Components/PageAnimation";
 
 function Work() {
   return (
-    <div className="container">
-      <h1>Work Page</h1>
-    </div>
+    <PageAnimation>
+      <div className="container">
+        <h1>Work Page</h1>
+      </div>
+    </PageAnimation>
   );
 }
 

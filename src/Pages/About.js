@@ -1,10 +1,14 @@
 import React from "react";
+import Banner from "../Components/Banner";
+import PageAnimation from "../Components/PageAnimation";
 
 function About() {
   return (
-    <div className="container">
-      <h1>About Page</h1>
-    </div>
+    <PageAnimation>
+      <div className="">
+        <Banner />
+      </div>
+    </PageAnimation>
   );
 }
 

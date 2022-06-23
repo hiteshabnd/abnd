@@ -1,7 +1,29 @@
+:root {
+  --dark: #111;
+  --light: #fafafa;
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -12,12 +34,35 @@
   overflow: hidden;
 }
 
-img {
-  max-width: 100%;
+.dark *,
+.light * {
+  transition: 1s;
 }
 
-a {
-  text-decoration: none;
+.dark {
+  background-color: var(--dark);
+  transition: 1s;
+}
+
+.light {
+  background-color: var(--light);
+  transition: 1s;
+}
+
+.dark h1 {
+  color: var(--light);
+}
+
+.dark-mode-button {
+  position: fixed;
+  top: 30%;
+  right: 0;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  transform: rotate(90deg) translateY(15px);
+  transform-origin: right;
 }
 
 @media only screen and (max-width: 767px) {
