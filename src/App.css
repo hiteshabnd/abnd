@@ -1,6 +1,11 @@
 :root {
   --dark: #111;
   --light: #fafafa;
+  --grey: #808083;
+  --b2c: #c10230;
+  --b2b: #558b6e;
+  --ppl: #ff6600;
+  --edu: #0033cc;
 }
 
 * {
@@ -14,7 +19,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   color: var(--dark);
 }
 
@@ -36,17 +42,12 @@ a {
 
 .dark *,
 .light * {
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .dark {
   background-color: var(--dark);
-  transition: 1s;
-}
-
-.light {
-  background-color: var(--light);
-  transition: 1s;
+  transition: 0.3s;
 }
 
 .dark h1 {
@@ -63,7 +64,14 @@ a {
   padding: 10px 20px;
   transform: rotate(90deg) translateY(15px);
   transform-origin: right;
+  z-index: 999999;
 }
 
 @media only screen and (max-width: 767px) {
+  .App {
+    overflow-x: hidden;
+  }
+  .dark-mode-button {
+    top: 80%;
+  }
 }

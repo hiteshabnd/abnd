@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { motion } from "framer-motion";
-import ABNDLogoSVG from "../assets/ABNDLogoSVG.svg";
+import Logo from "./Logo";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +15,9 @@ function Header() {
       <div className="container">
         <div className="logo-section">
           <Link to="/">
-            <img src={ABNDLogoSVG} alt="Logo" className="logo" />
+            <div>
+              <Logo className="logo">test</Logo>
+            </div>
           </Link>
         </div>
         <div className={isOpen ? "nav active" : "nav"}>
@@ -29,7 +31,6 @@ function Header() {
           <motion.div
             animate={{
               opacity: isOpen ? "0" : "1",
-              animation: ".3s ease-in-out",
             }}
           >
             <HiMenuAlt3 className="icon-hamburger" onClick={toggle} />
