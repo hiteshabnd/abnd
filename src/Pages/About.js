@@ -5,7 +5,7 @@ import PageAnimation from "../Components/PageAnimation";
 function About() {
   return (
     <PageAnimation>
-      <div className="">
+      <div>
         <Banner />
       </div>
     </PageAnimation>

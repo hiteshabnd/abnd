@@ -4,6 +4,7 @@ import Services from "../Pages/Services";
 import Work from "../Pages/Work";
 import Contact from "../Pages/Contact";
 import Home from "../Pages/Home";
+import ErrorPage from "./ErrorPage";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
@@ -17,6 +18,7 @@ function Pages() {
         <Route exact path="/services" element={<Services />}></Route>
         <Route exact path="/work" element={<Work />}></Route>
         <Route exact path="/contact" element={<Contact />}></Route>
+        <Route path="/*" element={<ErrorPage />}></Route>
       </Routes>
     </AnimatePresence>
   );

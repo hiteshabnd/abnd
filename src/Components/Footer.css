@@ -1,11 +1,15 @@
 .footer {
-  background: var(--dark);
-  color: white;
+  background: var(--uc--dark);
+  color: var(--uc--light);
   padding: 4rem 0;
 }
 
-.footer a {
-  color: white;
+.footer * {
+  color: var(--uc--light);
+}
+
+.dark .footer {
+  border-top: 1px solid var(--grey);
 }
 
 .footerGrid {
@@ -22,7 +26,6 @@
 
 .footerGridItem3 img {
   width: 260px;
-  transition: 0.3s;
 }
 
 .footerGridItem3 img:hover {

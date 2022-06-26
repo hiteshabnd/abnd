@@ -1,20 +1,17 @@
 import React from "react";
-import styled from "styled-components";
+import "./Banner.css";
+import { useLocation } from "react-router-dom";
 
 function Banner() {
+  let location = useLocation();
+
   return (
-    <HomeBanner>
-      <h1>Banner</h1>
-    </HomeBanner>
+    <div className="full-width">
+      <div className="container banner">
+        <h1>{location.pathname.replace("/", "")}</h1>
+      </div>
+    </div>
   );
 }
 
 export default Banner;
-
-const HomeBanner = styled.div`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;

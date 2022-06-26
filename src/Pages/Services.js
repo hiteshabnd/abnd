@@ -1,11 +1,12 @@
 import React from "react";
+import Banner from "../Components/Banner";
 import PageAnimation from "../Components/PageAnimation";
 
 function Services() {
   return (
     <PageAnimation>
-      <div className="container">
-        <h1>Service Page</h1>
+      <div>
+        <Banner />
       </div>
     </PageAnimation>
   );

@@ -15,7 +15,7 @@ function App() {
         <BrowserRouter>
           <Header />
           <button className="dark-mode-button" onClick={toggleDark}>
-            Dark Mode
+            {isDark ? "Light Mode" : "Dark Mode"}
           </button>
           <Pages />
           <Footer />
