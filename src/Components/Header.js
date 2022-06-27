@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./Header.css";
-import { Link } from "react-router-dom";
+import "./css/Header.css";
+import { NavLink, Link } from "react-router-dom";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { motion } from "framer-motion";
@@ -21,10 +21,10 @@ function Header() {
           </Link>
         </div>
         <div className={isOpen ? "nav active" : "nav"}>
-          <Link to="/about">About</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/work">Work</Link>
-          <Link to="/contact">Contact</Link>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/services">Services</NavLink>
+          <NavLink to="/work">Work</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </div>
         <div className="menu-icon">
           <IoClose className="icon-close" />

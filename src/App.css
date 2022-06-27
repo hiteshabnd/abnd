@@ -10,15 +10,18 @@
   --edu: #0033cc;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
 .dark {
   --dark: #fafafa;
   --light: #222;
+}
+
+.dark {
+  background-color: var(--light);
+}
+
+.dark *,
+.light * {
+  transition: 0.3s;
 }
 
 .light {
@@ -26,26 +29,11 @@
   --light: #fafafa;
 }
 
-.dark {
-  background-color: var(--light);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  color: var(--dark);
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
+@media (prefers-color-scheme: dark) {
+  .light {
+    --dark: #222;
+    --light: #f1f1f1;
+  }
 }
 
 .container {
@@ -53,12 +41,7 @@ a {
   max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  padding: 0 30px;
-}
-
-.dark *,
-.light * {
-  transition: 0.3s;
+  padding: 0 3rem;
 }
 
 .dark-mode-button {
@@ -69,13 +52,13 @@ a {
   background-color: var(--dark);
   color: var(--light);
   border: 1px solid var(--light);
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   transform: rotate(90deg) translateY(15px);
   transform-origin: right;
   z-index: 999999;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 76rem) {
   .App {
     overflow-x: hidden;
   }

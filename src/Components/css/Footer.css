@@ -1,7 +1,7 @@
 .footer {
   background: var(--uc--dark);
   color: var(--uc--light);
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .footer * {
@@ -15,7 +15,7 @@
 .footerGrid {
   display: grid;
   grid-template-columns: 3fr 2fr 4fr;
-  grid-gap: 50px;
+  grid-gap: 5rem;
 }
 
 .footerGridItem3 {
@@ -25,7 +25,7 @@
 }
 
 .footerGridItem3 img {
-  width: 260px;
+  width: 26rem;
 }
 
 .footerGridItem3 img:hover {
@@ -36,7 +36,7 @@
   padding-right: 6px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 76rem) {
   .footerGrid {
     grid-template-columns: 1fr;
   }
