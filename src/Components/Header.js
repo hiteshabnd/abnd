@@ -16,7 +16,7 @@ function Header() {
         <div className="logo-section">
           <Link to="/">
             <div>
-              <Logo className="logo">test</Logo>
+              <Logo className="logo" />
             </div>
           </Link>
         </div>

@@ -4,7 +4,9 @@ import PageAnimation from "../Components/PageAnimation";
 function Home() {
   return (
     <PageAnimation>
-      <div></div>
+      <div>
+        <h1>Home</h1>
+      </div>
     </PageAnimation>
   );
 }
