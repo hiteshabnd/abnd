@@ -1,10 +1,11 @@
 import React from "react";
+import Banner from "../Components/Banner";
 
 const ErrorPage = () => {
   return (
-    <div>
-      <h1>Error! Page Not Found</h1>
-    </div>
+    <Banner>
+      <h1>Error Page</h1>
+    </Banner>
   );
 };
 

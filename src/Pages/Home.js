@@ -1,12 +1,13 @@
 import React from "react";
+import Banner from "../Components/Banner";
 import PageAnimation from "../Components/PageAnimation";
 
 function Home() {
   return (
     <PageAnimation>
-      <div>
+      <Banner>
         <h1>Home</h1>
-      </div>
+      </Banner>
     </PageAnimation>
   );
 }

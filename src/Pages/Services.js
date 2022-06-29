@@ -5,9 +5,9 @@ import PageAnimation from "../Components/PageAnimation";
 function Services() {
   return (
     <PageAnimation>
-      <div>
-        <Banner />
-      </div>
+      <Banner>
+        <h1>Services</h1>
+      </Banner>
     </PageAnimation>
   );
 }
