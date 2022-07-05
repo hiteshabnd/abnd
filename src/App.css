@@ -1,3 +1,5 @@
+/* Theme Class Configuartion */
+
 :root {
   --dark: #222;
   --light: #fafafa;
@@ -29,13 +31,6 @@
   --light: #fafafa;
 }
 
-@media (prefers-color-scheme: dark) {
-  .light {
-    --dark: #222;
-    --light: #f1f1f1;
-  }
-}
-
 .container {
   width: 1280px;
   max-width: 100%;
@@ -58,7 +53,76 @@
   z-index: 999999;
 }
 
-@media only screen and (max-width: 76rem) {
+/* Grid Layout Construction */
+
+.grid {
+  display: grid;
+  text-align: center;
+  grid-gap: 3rem;
+}
+
+.grid8 {
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.grid6 {
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.grid5 {
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+}
+
+.grid4 {
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+}
+
+.grid3 {
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+}
+
+.grid2 {
+  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+}
+
+.grid8 div,
+.grid6 div,
+.grid5 div,
+.grid4 div,
+.grid3 div,
+.grid2 div,
+.flex div {
+  background-color: aqua;
+  border: 2px solid var(--dark);
+  min-height: 150px;
+  vertical-align: center;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.flex8 div {
+  flex-grow: 1;
+  min-width: 12rem;
+}
+
+.flex6 div {
+  flex-grow: 1;
+  min-width: 12rem;
+}
+
+.flex5 div {
+  flex-grow: 1;
+  min-width: 12rem;
+}
+
+@media only screen and (max-width: 760px) {
   .App {
     overflow-x: hidden;
   }

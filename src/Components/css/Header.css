@@ -108,7 +108,7 @@
   }
 }
 
-@media only screen and (max-width: 76rem) {
+@media only screen and (max-width: 760px) {
   .header {
     max-width: 100%;
     padding: 1rem 0;

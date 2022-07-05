@@ -36,7 +36,7 @@
   padding-right: 6px;
 }
 
-@media only screen and (max-width: 76rem) {
+@media only screen and (max-width: 760px) {
   .footerGrid {
     grid-template-columns: 1fr;
   }
